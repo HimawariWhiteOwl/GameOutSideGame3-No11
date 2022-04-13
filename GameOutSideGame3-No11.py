@@ -9,9 +9,8 @@ for current in xrange(6):
     for y in xrange(current):
         a = [x+i for i in your_list for x in a]
     complete_list = complete_list+a
-    print(complete_list)
-print(complete_list)
-# /([^ahote ircbus])\w+/g
+    #print(complete_list)
+#print(complete_list)
 for index in range(len(complete_list)):
     indexA = complete_list[index].find('a')
     indexB = complete_list[index].find('b')
@@ -22,6 +21,6 @@ for index in range(len(complete_list)):
         myobj = {'password': complete_list[index]}
         x = requests.post(url, data=myobj)
         print(x)
-print("Answer is {0}".format(answerList))
+print("Answer List is {0}".format(answerList))
 
 
